@@ -2,6 +2,7 @@ package net.namozdizex.nura.registry;
 
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SpawnEggItem;
 import net.namozdizex.nura.NuraRise;
@@ -40,6 +41,7 @@ public class NRItems
 
         register("nurarihyon_spawn_egg", NURARIHYON_SPAWN_EGG);
         register("nurarihan_spawn_egg", NURARIHAN_SPAWN_EGG);
+
     }
     private static void register(String key, Item item)
     {

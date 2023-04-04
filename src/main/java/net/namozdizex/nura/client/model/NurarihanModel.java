@@ -16,6 +16,6 @@ public class NurarihanModel <T extends Nurarihan> extends AbstractZombieModel<T>
 
     @Override
     public boolean isAggressive(T monster) {
-        return false;
+        return monster.isAggressive();
     }
 }

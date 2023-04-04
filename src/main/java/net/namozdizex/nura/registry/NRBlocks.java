@@ -13,23 +13,22 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Material;
 import net.namozdizex.nura.NuraRise;
-import net.namozdizex.nura.world.level.block.BladeStandBlock;
-import net.namozdizex.nura.world.level.block.IceYokaiClusterBlock;
-import net.namozdizex.nura.world.level.block.SoulYokaiLampBlock;
-import net.namozdizex.nura.world.level.block.YokaiLampBlock;
+import net.namozdizex.nura.world.level.block.*;
 
 public class NRBlocks
 {
-    public static final Block YOKAI_LAMP = new YokaiLampBlock(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).lightLevel(state -> 15).requiresCorrectToolForDrops().strength(1.0F,15.5F).noCollission());
-    public static final Block SOUL_YOKAI_LAMP = new SoulYokaiLampBlock(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).lightLevel(state -> 10).requiresCorrectToolForDrops().strength(1.0F,15.5F).noCollission());
+    public static final Block YOKAI_LAMP = new YokaiLampBlock(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).lightLevel(state -> 15).requiresCorrectToolForDrops().strength(1.0F,15.5F));
+    public static final Block SOUL_YOKAI_LAMP = new SoulYokaiLampBlock(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).lightLevel(state -> 10).requiresCorrectToolForDrops().strength(1.0F,15.5F));
     public static final Block TATAMI_BLOCK = new Block(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).requiresCorrectToolForDrops().strength(1.2f, 0.5f));
     public static final Block TSUGIKUMO_WEB_BLOCK = new Block(BlockBehaviour.Properties.of(Material.WEB).sound(SoundType.SLIME_BLOCK).requiresCorrectToolForDrops().strength(10.5f, 25.5f));
-    public static final Block ICE_YOKAI_CLUSTER = new IceYokaiClusterBlock(7, 3, BlockBehaviour.Properties.of(Material.AMETHYST).sound(SoundType.AMETHYST_CLUSTER).lightLevel(state -> 6).requiresCorrectToolForDrops().strength(1.5F).noCollission().isValidSpawn(NRBlocks::never).isSuffocating(NRBlocks::never).isViewBlocking(NRBlocks::never));
-    public static final Block SMALL_ICE_YOKAI_BUD = new IceYokaiClusterBlock(3, 4 ,BlockBehaviour.Properties.of(Material.AMETHYST).sound(SoundType.AMETHYST_CLUSTER).lightLevel(state -> 3).requiresCorrectToolForDrops().strength(1.5F).noCollission().isValidSpawn(NRBlocks::never).isSuffocating(NRBlocks::never).isViewBlocking(NRBlocks::never));
-    public static final Block MEDIUM_ICE_YOKAI_BUD = new IceYokaiClusterBlock(4, 3, BlockBehaviour.Properties.of(Material.AMETHYST).sound(SoundType.AMETHYST_CLUSTER).lightLevel(state -> 4).requiresCorrectToolForDrops().strength(1.5F).noCollission().isValidSpawn(NRBlocks::never).isSuffocating(NRBlocks::never).isViewBlocking(NRBlocks::never));
-    public static final Block LARGE_ICE_YOKAI_BUD = new IceYokaiClusterBlock(5, 3, BlockBehaviour.Properties.of(Material.AMETHYST).sound(SoundType.AMETHYST_CLUSTER).lightLevel(state -> 5).requiresCorrectToolForDrops().strength(1.5F).noCollission().isValidSpawn(NRBlocks::never).isSuffocating(NRBlocks::never).isViewBlocking(NRBlocks::never));
-    public static final Block BLADE_STAND = new BladeStandBlock(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).requiresCorrectToolForDrops().strength(0.3f, 5.4f).noCollission());
-    public static final Block UNFIRE_YOKAI_LAMP = new YokaiLampBlock(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).requiresCorrectToolForDrops().noCollission());
+    public static final Block ICE_YOKAI_CLUSTER = new IceYokaiClusterBlock(7, 3, BlockBehaviour.Properties.of(Material.AMETHYST).sound(SoundType.AMETHYST_CLUSTER).lightLevel(state -> 6).requiresCorrectToolForDrops().strength(1.5F).isValidSpawn(NRBlocks::never).isSuffocating(NRBlocks::never).isViewBlocking(NRBlocks::never));
+    public static final Block SMALL_ICE_YOKAI_BUD = new IceYokaiClusterBlock(3, 4 ,BlockBehaviour.Properties.of(Material.AMETHYST).sound(SoundType.AMETHYST_CLUSTER).lightLevel(state -> 3).requiresCorrectToolForDrops().strength(1.5F).isValidSpawn(NRBlocks::never).isSuffocating(NRBlocks::never).isViewBlocking(NRBlocks::never));
+    public static final Block MEDIUM_ICE_YOKAI_BUD = new IceYokaiClusterBlock(4, 3, BlockBehaviour.Properties.of(Material.AMETHYST).sound(SoundType.AMETHYST_CLUSTER).lightLevel(state -> 4).requiresCorrectToolForDrops().strength(1.5F).isValidSpawn(NRBlocks::never).isSuffocating(NRBlocks::never).isViewBlocking(NRBlocks::never));
+    public static final Block LARGE_ICE_YOKAI_BUD = new IceYokaiClusterBlock(5, 3, BlockBehaviour.Properties.of(Material.AMETHYST).sound(SoundType.AMETHYST_CLUSTER).lightLevel(state -> 5).requiresCorrectToolForDrops().strength(1.5F).isValidSpawn(NRBlocks::never).isSuffocating(NRBlocks::never).isViewBlocking(NRBlocks::never));
+    public static final Block BLADE_STAND = new BladeStandBlock(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).requiresCorrectToolForDrops().strength(0.3f, 5.4f));
+    public static final Block UNFIRE_YOKAI_LAMP = new YokaiLampBlock(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).requiresCorrectToolForDrops());
+    public static final Block CURSED_YOKAI_LAMP = new CursedYokaiLampBlock(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).requiresCorrectToolForDrops().strength(0.3f,5.4f));
+    public static final Block TAMATSUKI_LAMP = new CursedYokaiLampBlock(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).requiresCorrectToolForDrops().strength(0.3f,5.4f));
 
     public static void init()
     {
@@ -43,6 +42,8 @@ public class NRBlocks
         register("large_ice_yokai_bud", LARGE_ICE_YOKAI_BUD, new Item.Properties().tab(NuraRise.TAB));
         register("blade_stand", BLADE_STAND, new Item.Properties().tab(NuraRise.TAB));
         register("unfire_yokai_lamp", UNFIRE_YOKAI_LAMP, new Item.Properties().tab(NuraRise.TAB));
+        register("cursed_yokai_lamp", CURSED_YOKAI_LAMP, new Item.Properties().tab(NuraRise.TAB));
+        register("tamatsuki_lamp", TAMATSUKI_LAMP, new Item.Properties().tab(NuraRise.TAB));
     }
 
     public static void register(String key, Block block, Object o)

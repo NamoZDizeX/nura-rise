@@ -13,11 +13,10 @@ import net.namozdizex.nura.registry.NRBlocks;
 
 import java.util.stream.Stream;
 
-public class YokaiLampBlock extends Block {
-    public YokaiLampBlock(Properties properties) {
+public class CursedYokaiLampBlock extends Block {
+    public CursedYokaiLampBlock(Properties properties) {
         super(properties);
     }
-
     private static final VoxelShape SHAPE = Stream.of(
             Block.box(3, 1, 3, 13, 15, 13), Block.box(4, 0, 4, 12, 1, 12), Block.box(4, 15, 4, 12, 16, 12)).reduce((v1, v2) -> Shapes.join(v1, v2, BooleanOp.OR)).get();
 
@@ -28,6 +27,6 @@ public class YokaiLampBlock extends Block {
     @Override
     public boolean skipRendering(BlockState blockState, BlockState adjacentBlockState, Direction direction)
     {
-        return adjacentBlockState.getBlock() == NRBlocks.YOKAI_LAMP || adjacentBlockState.getBlock() == NRBlocks.UNFIRE_YOKAI_LAMP;
+        return adjacentBlockState.getBlock() == NRBlocks.YOKAI_LAMP || adjacentBlockState.getBlock() == NRBlocks.TAMATSUKI_LAMP;
     }
 }

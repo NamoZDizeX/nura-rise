@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRe
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
+import net.namozdizex.nura.entity.Nurarihan;
 import net.namozdizex.nura.entity.Nurarihyon;
 import net.namozdizex.nura.registry.NRBlocks;
 import net.namozdizex.nura.registry.NREntity;
@@ -27,6 +28,7 @@ public class NuraRise implements ModInitializer {
 		NREntity.init();
 
 		FabricDefaultAttributeRegistry.register(NREntity.NURARIHYON, Nurarihyon.createMobAttributes());
-		FabricDefaultAttributeRegistry.register(NREntity.NURARIHAN, Nurarihyon.createMobAttributes());
+		FabricDefaultAttributeRegistry.register(NREntity.NURARIHAN, Nurarihan.createMobAttributes());
+
 	}
 }

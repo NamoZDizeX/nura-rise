@@ -20,6 +20,8 @@ import net.minecraft.world.entity.monster.piglin.AbstractPiglin;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
+import net.namozdizex.nura.event.RihanAttackGoal;
+import net.namozdizex.nura.event.RihyonAttackGoal;
 import net.namozdizex.nura.registry.NRItems;
 
 public class Nurarihan extends Monster {
@@ -28,6 +30,7 @@ public class Nurarihan extends Monster {
     }
 
     protected void registerGoals() {
+        this.goalSelector.addGoal(2, new RihanAttackGoal(this, 1.0, false));
         this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, AbstractPiglin.class, true));
         super.registerGoals();
     }
