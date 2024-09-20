@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "nura:block/blade_stand"
+      },
+      {
+        "model": "nura:block/blade_stand",
+        "y": 90
+      },
+      {
+        "model": "nura:block/blade_stand",
+        "y": 180
+      },
+      {
+        "model": "nura:block/blade_stand",
+        "y": 270
+      }
+    ]
+  }
+}

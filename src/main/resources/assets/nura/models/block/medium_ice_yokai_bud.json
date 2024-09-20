@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "nura:block/medium_ice_yokai_bud"
+  }
+}

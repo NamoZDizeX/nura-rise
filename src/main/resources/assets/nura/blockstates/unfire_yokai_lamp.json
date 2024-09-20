@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "nura:block/unfire_yokai_lamp"
+      },
+      {
+        "model": "nura:block/unfire_yokai_lamp",
+        "y": 90
+      },
+      {
+        "model": "nura:block/unfire_yokai_lamp",
+        "y": 180
+      },
+      {
+        "model": "nura:block/unfire_yokai_lamp",
+        "y": 270
+      }
+    ]
+  }
+}

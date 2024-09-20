@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "nura:item/final_demon_lord_hammer"
+  }
+}

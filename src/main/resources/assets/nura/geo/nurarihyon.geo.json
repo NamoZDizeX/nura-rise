@@ -1,0 +1,73 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.nurarihyon",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "nurarihyon",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "leg1",
+					"parent": "nurarihyon",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [0, 6, -2], "size": [4, 6, 4], "uv": [40, 20]},
+						{"origin": [0, 0, -2], "size": [4, 6, 4], "uv": [24, 26]}
+					]
+				},
+				{
+					"name": "leg2",
+					"parent": "nurarihyon",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-4, 6, -2], "size": [4, 6, 4], "uv": [32, 36]},
+						{"origin": [-4, 0, -2], "size": [4, 6, 4], "uv": [24, 16]}
+					]
+				},
+				{
+					"name": "body",
+					"parent": "nurarihyon",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-4, 12, -2], "size": [8, 12, 4], "uv": [0, 16]}
+					]
+				},
+				{
+					"name": "arm1",
+					"parent": "nurarihyon",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [4, 18, -2], "size": [4, 6, 4], "uv": [16, 36]},
+						{"origin": [4, 12, -2], "size": [4, 6, 4], "uv": [32, 0]}
+					]
+				},
+				{
+					"name": "arm2",
+					"parent": "nurarihyon",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-8, 18, -2], "size": [4, 6, 4], "uv": [36, 10]},
+						{"origin": [-8, 12, -2], "size": [4, 6, 4], "uv": [0, 32]}
+					]
+				},
+				{
+					"name": "head",
+					"parent": "nurarihyon",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-4, 24, -4], "size": [8, 8, 8], "uv": [0, 0]}
+					]
+				}
+			]
+		}
+	]
+}

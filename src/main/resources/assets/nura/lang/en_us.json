@@ -1,0 +1,30 @@
+{
+  "item.nura.nenekirimaru": "Nenekirimaru [ First Form ]",
+  "item.nura.nenekirimaru2": "Nenekirinaru [ Second Form ]",
+  "item.nura.demon_lord_hammer": "Demon Lord Hammer",
+  "item.nura.final_demon_lord_hammer": "Final Demon Lord Hammer",
+  "item.nura.yokai_sword_unfinish": "Yokai Sword[ Unfinish ]",
+
+  "item.nura.shikigami": "Shikigami",
+  "item.nura.ice_shard": "Ice Shard",
+  "item.nura.yokai_soul": "Yokai Soul",
+  "item.nura.yokai_handle": "Yokai Handle",
+  "item.nura.yokai_blade": "Yokai Blade",
+
+  "itemGroup.nura.main": "Nurarihyon No Mago",
+
+  "block.nura.yokai_lamp": "Yokai Lamp",
+  "block.nura.soul_yokai_lamp": "Soul Yokai Lamp",
+  "block.nura.tatami_block": "Tatami Block",
+  "block.nura.tsugikumo_web_block": "Tsugikumo Web Block",
+  "block.nura.ice_yokai_cluster": "Ice Yokai Cluster",
+  "block.nura.small_ice_yokai_bud": "Small Ice Yokai Bud",
+  "block.nura.medium_ice_yokai_bud": "Medium Ice Yokai Bud",
+  "block.nura.large_ice_yokai_bud": "Large Ice Yokai Bud",
+  "block.nura.blade_stand": "Blade Stand",
+  "block.nura.unfire_yokai_lamp": "Unfire Yokai Lamp",
+
+  "item.nura.nurarihyon_spawn_egg": "Nurarihyon Spawn Egg",
+  "item.nura.nurarihan_spawn_egg": "Nurarihan Spawn Egg"
+
+}

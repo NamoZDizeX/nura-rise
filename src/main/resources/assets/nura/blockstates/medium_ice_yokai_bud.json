@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "nura:block/medium_ice_yokai_bud",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "nura:block/medium_ice_yokai_bud",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "nura:block/medium_ice_yokai_bud",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "nura:block/medium_ice_yokai_bud",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "nura:block/medium_ice_yokai_bud"
+    },
+    "facing=west": {
+      "model": "nura:block/medium_ice_yokai_bud",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

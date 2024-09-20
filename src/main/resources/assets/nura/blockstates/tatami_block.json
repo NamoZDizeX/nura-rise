@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "nura:block/tatami_block"
+    }
+  }
+}
